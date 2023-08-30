@@ -15,7 +15,7 @@ namespace ConsoleApp1
             //string name= Console.ReadLine();
             //Console.WriteLine($"Hello {name}");
 
-            bool canIvOTE = true;
+            //bool canIvOTE = true;
             //Console.WriteLine(int.MaxValue);
 
             //  Integral Types:
@@ -52,23 +52,23 @@ namespace ConsoleApp1
             // Nullable<T>: Wraps a value type to allow it to have a null value.For example, int ? represents a nullable integer.
 
 
-             //CONVERSION from string
-            bool one = bool.Parse("True");
-            float two = float.Parse("234");
-            double three = double.Parse("243.32423");     
+            //CONVERSION from string
+            //bool one = bool.Parse("True");
+            //float two = float.Parse("234");
+            //double three = double.Parse("243.32423");     
 
-            //To String
-            string four = one.ToString();
-            string five = two.ToString();
-            Console.WriteLine(four.GetType);
+            ////To String
+            //string four = one.ToString();
+            //string five = two.ToString();
+            //Console.WriteLine(four.GetType);
 
-            //Explicit Conversion
-            double fine2 = 32.23809283;
-            float fine3 = (float)fine2;
+            ////Explicit Conversion
+            //double fine2 = 32.23809283;
+            //float fine3 = (float)fine2;
 
-            //Implicit Conversion            
-            float fine = 12.23245f;
-            double fine4 = fine;
+            ////Implicit Conversion            
+            //float fine = 12.23245f;
+            //double fine4 = fine;
 
 
             //Output formatting
@@ -83,7 +83,7 @@ namespace ConsoleApp1
 
             //String functions
 
-            //string randstr = "My name is shahman";
+            //string randstr = "   I'm shahman";
             //Console.WriteLine(randstr);
             //Console.WriteLine(randstr.Length);
             //Console.WriteLine(randstr.Contains("is"));
@@ -94,11 +94,36 @@ namespace ConsoleApp1
             //Console.WriteLine(randstr.Replace("my","yours",StringComparison.OrdinalIgnoreCase));
 
 
-            //Console.WriteLine(String.Compare("A","B",StringComparison.OrdinalIgnoreCase));
+            //Console.WriteLine(String.Compare("A","B",StringComparison.OrdinalIgnoreCase)); output [-1,0,1]
 
-            Console.WriteLine("A = a ? {0}", String.Compare("A","a",StringComparison.OrdinalIgnoreCase));
+            //Console.WriteLine("A = a ? {0}", String.Equals("A","a",StringComparison.OrdinalIgnoreCase));
+            //equals output [T,F]
+            // Console.WriteLine(randstr.PadLeft(20,'?'));
+            // Console.WriteLine(randstr.Trim());
+            // Console.WriteLine(randstr.ToUpper());
+            //string newString = String.Format("Hello there {0}", "Shahman");
+            // Console.Write(newString + "\n");
+
+            //escape character \
+            //Console.WriteLine("Hello \\n");
+            //Console.WriteLine(@"Hello \n");
 
 
+            //Arrays:
+            //Fixed size
+            int[] favNums = new int[3];
+            int[] favNums2 = { 1, 2, 3, 4 };
+            favNums[0] = 23;
+            var vars = new[] { "cars", "dogs" };
+            string[] vs = {"Cats"};
+
+            for(int i=0; i<vars.Length; i++) {
+              Console.WriteLine(vars[i]);     
+            }
+
+            //multi-dim array
+
+            int[][] vs1 = new int[vars.Length][];
 
 
 
