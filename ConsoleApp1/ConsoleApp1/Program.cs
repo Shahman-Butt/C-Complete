@@ -110,25 +110,82 @@ namespace ConsoleApp1
 
 
             //Arrays:
-            //Fixed size
-            int[] favNums = new int[3];
-            int[] favNums2 = { 1, 2, 3, 4 };
-            favNums[0] = 23;
-            var vars = new[] { "cars", "dogs" };
-            string[] vs = {"Cats"};
+            //arrays Fixed size
+            ////int[] favNums = new int[3];
+            //int[] favNums2 = { 1, 2, 3, 4 };
+            //Console.WriteLine(favNums2.GetValue(2));
+            //favNums[0] = 23;
 
-            for(int i=0; i<vars.Length; i++) {
-              Console.WriteLine(vars[i]);     
-            }
+            //var vars = new[] { "cars", "dogs" };
+            //string[] vs = { "Cats" ,"dogs"};
+            //Array.Reverse(vs);
+            //foreach (string i in vs)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //for(int i=0; i<vars.Length; i++) {
+            //  Console.WriteLine(vars[i]);     
+            //}
+
+
+
+            //Two methods to declare array 
+            //int[] intarray2 = new int[3] { 12, 5, 5 };
+            //int[] intarray3 = { 12, 5, 5 };
+
+
 
             //multi-dim array
 
-            int[][] vs1 = new int[vars.Length][];
+            //int[][] vs1 = new int[vars.Length][];
+
+            //Two methods to declare multidim array 
+            //string[,] multidimstr = new string[2, 2]
+            //{
+            //    {"var1 ","var2" },{"var3","var4"}
+            //};
+            //string[,] multidimstr2 = { { "", "" }, { "", "" } };
+            //Console.WriteLine(multidimstr[1,1]);
+            //Console.WriteLine(multidimstr.GetValue(1,1));
+            ////both are same
+            //Console.WriteLine(multidimstr.GetLength(0));
+            //Console.WriteLine(multidimstr.Length);
+            ////Diff bw getlength and length
+
+            //becuase i didnt make the function static
+            //int[] favNums2 = { 1, 2, 3, 4 };
+            //string msg = "Testing function";
+            //Program prog = new Program();
+            //prog.function2(favNums2, msg);
 
 
 
+            //Functions on arrays 
+            int[] favNums2 = { 1, 2, 3, 4 };
+            Array.Reverse(favNums2);
+            int[] var = new int[favNums2.Length];
+            Array.Copy(favNums2, var, var.Length);
+            Array.Sort(var);
+
+            foreach(int i in var)
+            {
+                Console.WriteLine(i);
+            }
+            foreach (int i in favNums2)
+            {
+                Console.WriteLine(i);
+            }
+            favNums2.SetValue(0,0);
 
 
+            int[] sourceArray = { 1, 2, 3, 4, 5 };
+            int[] destinationArray = new int[5];
+            sourceArray.CopyTo(destinationArray, 0); //0 is the place of starting copy
+
+            int[] intArray = new int[5]; // Creates a one-dimensional array of integers with length 5
+            Array dynamicArray = Array.CreateInstance(typeof(int), 5); // Creates an array of integers with length 5
+            
 
 
 
@@ -136,5 +193,23 @@ namespace ConsoleApp1
 
 
         }
+
+        //for and foreach and function
+        //void function1(int[] intarray, string message)
+        //{
+        //    for (int k = 1; k < intarray.Length; k++)
+        //    {
+
+        //        Console.WriteLine(intarray[k]);
+        //    }
+        //}
+        //void function2(int[] intarray, string message)
+        //{
+        //    foreach (int k in intarray)
+        //    {
+        //        Console.WriteLine("{0} : {1}",k,message);
+        //    }
+        //}
+
     }
 }
