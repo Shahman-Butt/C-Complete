@@ -5,6 +5,8 @@ namespace ConsoleApp1
     public class Program
     {
         static void Main(string[] args)
+            //write all functions and codes in seperate chunks of folders o functions
+
         {
             //Console.WriteLine("Hello World!");
             //Console.ForegroundColor = ConsoleColor.Black;
@@ -20,7 +22,7 @@ namespace ConsoleApp1
 
             //  Integral Types:
             //byte: 8 - bit unsigned integer. Range: 0 to 255.
-            //sbyte: 8 - bit signed integer. Range: -128 to 127.
+            //sbyte: 8 - bit signed integer. Range: -128 to 127. 
             //short: 16 - bit signed integer. Range: -32,768 to 32,767.
             //ushort: 16 - bit unsigned integer. Range: 0 to 65,535.
             //int: 32 - bit signed integer. Range: -2,147,483,648 to 2,147,483,647.
@@ -161,31 +163,147 @@ namespace ConsoleApp1
 
 
 
-            //Functions on arrays 
-            int[] favNums2 = { 1, 2, 3, 4 };
-            Array.Reverse(favNums2);
-            int[] var = new int[favNums2.Length];
-            Array.Copy(favNums2, var, var.Length);
-            Array.Sort(var);
+            //    //Functions on arrays 
+            //    int[] favNums2 = { 1, 2, 3, 4 };
+            //    Array.Reverse(favNums2);
+            //    int[] var = new int[favNums2.Length];
+            //    Array.Copy(favNums2, var, var.Length);
+            //    Array.Sort(var);
 
-            foreach(int i in var)
-            {
-                Console.WriteLine(i);
-            }
-            foreach (int i in favNums2)
-            {
-                Console.WriteLine(i);
-            }
-            favNums2.SetValue(0,0);
+            //    foreach(int i in var)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //    foreach (int i in favNums2)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //    favNums2.SetValue(0,0);
 
 
-            int[] sourceArray = { 1, 2, 3, 4, 5 };
-            int[] destinationArray = new int[5];
-            sourceArray.CopyTo(destinationArray, 0); //0 is the place of starting copy
+            //    int[] sourceArray = { 1, 2, 3, 4, 5 };
+            //    int[] destinationArray = new int[5];
+            //    sourceArray.CopyTo(destinationArray, 0); //0 is the place of starting copy
 
-            int[] intArray = new int[5]; // Creates a one-dimensional array of integers with length 5
-            Array dynamicArray = Array.CreateInstance(typeof(int), 5); // Creates an array of integers with length 5
-            
+            //    int[] intArray = new int[5]; // Creates a one-dimensional array of integers with length 5
+            //    Array dynamicArray = Array.CreateInstance(typeof(int), 5); // Creates an array of integers with length 5
+
+            //    //Ifelse
+            //    int age = 17;
+            //    if ((age >= 5) || (age == 0))
+            //    {
+            //        Console.Write(age);
+            //    }
+
+            //    //ternary operator
+            //    string res = age > 12 ? "True":"False";
+
+
+            //    //switch case
+            //    switch (age)
+            //    {
+            //        case 0:
+            //            Console.WriteLine("Case0");
+            //            break;
+            //        case 1:
+            //        case 2:
+            //            //We can do like this too
+            //            Console.WriteLine("Case1");
+            //            break;
+            //        default:
+            //            Console.WriteLine("case default");
+            //            //break;
+
+            //            goto othercase;
+
+            //    }
+            //othercase:
+            //    Console.WriteLine("other case");
+
+
+            //    //while loop 
+
+            //    int i = 10;
+            //    while (i <= 10)
+            //    {
+            //        if (1 % 2 == 0)
+            //        {
+            //            i++;
+            //            continue;
+            //        }
+            //        if (i == 9) break;
+            //        Console.WriteLine(i);
+            //        i++;
+            //    }
+
+            //    //do while loop (execute atleast one time)
+
+            //    do
+            //    {
+            //        if (1 % 2 == 0)
+            //        {
+            //            i++;
+            //            continue;
+            //        }
+            //        if (i == 9) break;
+            //        Console.WriteLine(i);
+            //        i++;
+            //    }
+            //    while(i <= 10);
+
+
+            //Random number game
+
+
+
+            //try catch and exception
+
+            //try
+            //{
+            //    int guessed = 0;
+            //    Random random = new Random();
+            //    int sec = random.Next(5);
+
+            //    do
+            //    {
+            //        Console.WriteLine("Enter a number between 1 and 5 to guess the real number:");
+            //        guessed = int.Parse(Console.ReadLine());
+            //        if (guessed == 1)
+            //        {
+            //            throw new ArgumentException("You can't guess 1.");
+            //            // Or use throw new InvalidOperationException("You can't guess 1.");
+            //        }
+
+            //    } while (guessed != sec);
+
+            //    Console.WriteLine("Hooray, you guessed it right!");
+            //}
+            //catch (ArgumentException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //    Console.WriteLine(ex.GetType().Name);
+
+            //}
+            //catch (FormatException ex)
+            //{
+            //    Console.WriteLine("Invalid input. Please enter a valid number.");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Cleaning up!!!!");
+            //}
+
+            //StringBuilder:
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -210,6 +328,7 @@ namespace ConsoleApp1
         //        Console.WriteLine("{0} : {1}",k,message);
         //    }
         //}
+
 
     }
 }
